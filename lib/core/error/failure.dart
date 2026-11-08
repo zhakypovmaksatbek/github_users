@@ -9,7 +9,6 @@ final class NoInternetFailure extends Failure {
 final class RateLimitFailure extends Failure {
   const RateLimitFailure({this.resetsAt});
 
-  /// UTC instant from the `x-ratelimit-reset` header, when GitHub sends one.
   final DateTime? resetsAt;
 }
 
